@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.18.ex</title>
+    <style>
+        table{
+            border: 1px solid #000;
+            border-collapse: collapse;
+ 
+            
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        th, td{
+            border: 1px solid #000;
+        }
+
+        td{
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: initial;
+        }
+        ul::after{
+            display: block;
+            clear: both;
+            content: "";
+        }
+
+        li{
+            list-style: none;
+            float:left;
+            padding-right: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>22.13.18 코딩</h1>
+    
+    <p><a href="https://naver.com">네이버 바로가기</a></p>
+    <hr>
+    <ul>
+        <li><a href="#table">테이블</a></li>
+        <li><a href="#image">이미지</a></li>
+        <li><a href="#video">비디오</a></li>
+    </ul>
+
+
+    <h2>테이블 만들기</h2>
+    <table id="table">
+        <caption>급여명세서</caption>
+        <colgroup>
+            <col width='100px'>
+            <col width='70px'>
+            <col width='70px'>
+            <col width='70px'>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>급여/성함</th>
+                <th>김씨</th>
+                <th>이씨</th>
+                <th>박씨</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <th>1월</th>
+                <td>100</td>
+                <td>400</td>
+                <td>700</td>
+            </tr>
+
+            
+            <tr>
+                <th>2월</th>
+                <td>100</td>
+                <td>200</td>
+                <td>500</td>
+            </tr>
+            
+            <tr>
+                <th>3월</th>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2 id="image">이미지 연결</h2>
+    <img width="500px"  src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg">
+
+    <h2 id="video">비디오 연결</h2>
+    <video  width="80%" autoplay muted loop  controls src="../revise/image/People - 84973.mp4"></video>
+    
+</body>
+</html>
